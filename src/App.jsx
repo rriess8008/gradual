@@ -79,29 +79,7 @@ const today = new Date().toISOString().slice(0,10);
 const tomorrow = new Date(Date.now()+86400000).toISOString().slice(0,10);
 const nextWeek = new Date(Date.now()+7*86400000).toISOString().slice(0,10);
 
-const SAMPLE = [
-  { id:"s1", title:"Workshop Build", order:0, shared:false, shareId:null, tasks:[
-    { id:"t1", text:"Gather materials and tools", state:4, order:0, priority:"none", due:null, subtasks:[] },
-    { id:"t2", text:"Draft initial design", state:2, order:1, priority:"high", due:today, subtasks:[
-      { id:"st1", text:"Research references", state:4, order:0, subtasks:[] },
-      { id:"st2", text:"Rough layout sketch", state:1, order:1, subtasks:[
-        { id:"st2a", text:"Thumbnail sketches", state:4, order:0, subtasks:[] },
-        { id:"st2b", text:"Pick best option", state:1, order:1, subtasks:[] },
-      ]},
-      { id:"st3", text:"Finalize measurements", state:0, order:2, subtasks:[] },
-    ]},
-    { id:"t3", text:"Cut primary components", state:1, order:2, priority:"medium", due:tomorrow, subtasks:[] },
-    { id:"t4", text:"Dry fit and test assembly", state:0, order:3, priority:"low", due:nextWeek, subtasks:[] },
-  ]},
-  { id:"s2", title:"Reading & Research", order:1, shared:false, shareId:null, tasks:[
-    { id:"t5", text:"Read first section", state:4, order:0, priority:"none", due:null, subtasks:[] },
-    { id:"t6", text:"Collect key notes", state:2, order:1, priority:"medium", due:tomorrow, subtasks:[
-      { id:"st4", text:"Chapter summaries", state:4, order:0, subtasks:[] },
-      { id:"st5", text:"Quote archive", state:0, order:1, subtasks:[] },
-    ]},
-    { id:"t7", text:"Cross-reference sources", state:0, order:2, priority:"low", due:nextWeek, subtasks:[] },
-  ]},
-];
+const SAMPLE = [];
 
 // ─── PROGRESS CHECKBOX ────────────────────────────────────────────────────────
 // 5 states: 0=empty, 1=25%, 2=50%, 3=75%, 4=complete
