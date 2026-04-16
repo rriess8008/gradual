@@ -2,8 +2,12 @@ import { useState, useEffect, useRef, useCallback } from "react";
 
 // ─── FIREBASE CONFIG ──────────────────────────────────────────────────────────
 const FIREBASE_CONFIG = {
-  apiKey: "", authDomain: "", projectId: "",
-  storageBucket: "", messagingSenderId: "", appId: "",
+  apiKey: "AIzaSyBZsBDO0mWE1HpXdvutbmn5o3Ph70khheY",
+  authDomain: "gradual-61ff2.firebaseapp.com",
+  projectId: "gradual-61ff2",
+  storageBucket: "gradual-61ff2.firebasestorage.app",
+  messagingSenderId: "78960749843",
+  appId: "1:78960749843:web:9198a0effd8f640c293ee6"
 };
 const FIREBASE_ENABLED = Object.values(FIREBASE_CONFIG).every(v => v !== "");
 const LISTS_COL = "gradual-lists";
